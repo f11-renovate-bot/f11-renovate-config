@@ -1,0 +1,25 @@
+{
+    "packageRules": [
+        {
+            "updateTypes": ["pin", "digest"],
+            "automerge": true,
+            "groupName": "dependencies (pin & digest)"
+        },
+        {
+            "updateTypes": ["minor", "patch"],
+            "depTypeList": ["devDependencies"],
+            "automerge": true,
+            "groupName": "devDependencies (non-major)"
+        },
+        {
+            "updateTypes": ["minor", "patch"],
+            "packagePatterns": ["{{arg0}}"],
+            "groupName": "whitelisted dependencies (minor & patch)",
+            "automerge": true
+        }
+    ],
+    "gitLabAutomerge": true,
+    "semanticCommitScope": null,
+    "semanticCommits": true,
+    "semanticCommitType": "Upgrade"
+}
