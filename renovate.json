@@ -3,23 +3,23 @@
         {
             "updateTypes": ["pin", "digest"],
             "automerge": true,
-            "groupName": "dependencies (pin & digest)"
+            "description": "dependencies (pin & digest)"
         },
         {
             "updateTypes": ["minor", "patch"],
             "depTypeList": ["devDependencies"],
             "automerge": true,
-            "groupName": "devDependencies (non-major)"
+            "description": "devDependencies (non-major)"
         },
         {
             "updateTypes": ["minor", "patch"],
             "packagePatterns": ["{{arg0}}"],
             "groupName": "whitelisted dependencies (minor & patch)",
-            "automerge": true
+            "description": true
         }
     ],
     "gitLabAutomerge": true,
     "semanticCommitScope": null,
     "semanticCommits": true,
-    "semanticCommitType": "Upgrade"
+    "semanticCommitType": "upgrade"
 }
