@@ -14,8 +14,8 @@
         {
             "updateTypes": ["minor", "patch"],
             "packagePatterns": ["{{arg0}}"],
-            "groupName": "whitelisted dependencies (minor & patch)",
-            "description": true
+            "description": "whitelisted dependencies (minor & patch)",
+            "automerge": true
         }
     ],
     "gitLabAutomerge": true,
